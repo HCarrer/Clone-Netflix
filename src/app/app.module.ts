@@ -10,7 +10,7 @@ import { LanguagesBtnComponent } from './components/languages-btn/languages-btn.
   declarations: [
     AppComponent,
     NavbarComponent,
-    LanguagesBtnComponent
+    LanguagesBtnComponent,
   ],
   imports: [
     BrowserModule,
