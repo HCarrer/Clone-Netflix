@@ -25,7 +25,6 @@ export class NewsletterIndexComponent implements OnInit {
   onClick() {
     this.labelClick.emit();
     this.clicked = !this.clicked;
-    console.log('oi');
   }
 
 }
