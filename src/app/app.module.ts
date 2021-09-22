@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { IndexBackgroundImageComponent } from './components/index-background-image/index-background-image.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
     NavbarComponent,
     LanguagesBtnComponent,
     NewsletterIndexComponent,
+    IndexBackgroundImageComponent,
   ],
   imports: [
     BrowserModule,
