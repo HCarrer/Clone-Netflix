@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { IndexBackgroundImageComponent } from './components/index-background-image/index-background-image.component';
+import { HomePageLoggedOffComponent } from './components/home-page-logged-off/home-page-logged-off.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { IndexBackgroundImageComponent } from './components/index-background-ima
     LanguagesBtnComponent,
     NewsletterIndexComponent,
     IndexBackgroundImageComponent,
+    HomePageLoggedOffComponent,
   ],
   imports: [
     BrowserModule,

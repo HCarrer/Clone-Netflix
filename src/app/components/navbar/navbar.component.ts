@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 import { LanguagesBtnComponent } from '../languages-btn/languages-btn.component';
 
@@ -9,9 +9,18 @@ import { LanguagesBtnComponent } from '../languages-btn/languages-btn.component'
 })
 export class NavbarComponent implements OnInit {
 
+  @Output() isLoggedOutputEvent = new EventEmitter<boolean>();
+
+  isLogged: boolean = false;
+
   constructor() {}
 
   ngOnInit(): void {
+  }
+
+  toLog() {
+    this.isLogged = !this.isLogged;
+    this.isLoggedOutputEvent.emit(this.isLogged);
   }
 
 }

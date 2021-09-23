@@ -1,5 +1,5 @@
-<div class="pt-8 w-screen h-screen">
-    <app-index-background-image></app-index-background-image>
-    <app-navbar></app-navbar>
-    <app-newsletter-index></app-newsletter-index>
+<app-home-page-logged-off (loginEventOutput)="logIn()" *ngIf="!isLogged"></app-home-page-logged-off>
+<div *ngIf="isLogged">
+    <app-navbar (isLoggedOutputEvent)="logIn()"></app-navbar>
+    <h1 class="text-white">Logado</h1>
 </div>
